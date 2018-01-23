@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 95vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+  padding-top: 2px;
+}
+
+.header {
+  height:4vh;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: black;
+}
+
+.headerHome {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.home {
+  margin-left: 20px;
+  float: left;
+  color: black;
+  height:4vh;
+
+}
+
+.blur {
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("../images/oldtownprague.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: alpha(opacity=30);
+  /* IE */
+  -moz-opacity: 0.3;
+  /* Mozilla */
+  opacity: 0.3;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.non-blur {
+  background-color: #FCFCFC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+input[type=text] {
+  min-width: 400px;
+  letter-spacing: 5px;
+  color: #757575;
+  text-align: center;
+  font-size: 2.94vw;
+  width: 100%;
+}
+
+input[type=submit] {
+  min-width: 125px;
+  width: 15%;
+  background-color: #115FC0;
+  font-size: 3vw;
+  color: #FCFCFC;
+  vertical-align: top;
+}
+
+.search {
+  text-align: center;
+  margin-top: 40vh;
+  min-width: 600px;
+}
+
+#PlacesAutocomplete__root {
+  text-align: center;
+  display: inline-block;
+  width: 60%;
+}
