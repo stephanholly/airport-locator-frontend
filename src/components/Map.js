@@ -9,7 +9,7 @@ import * as airportsAction from '../actions/airports'
 
 const MyMapComponent = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDREz-G1zxK7Nl5ETAPJQpN3xyVCu02Y3k&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `92vh` }} />,
     containerElement: <div style={{ height: `92vh` }} />,
     mapElement: <div style={{ height: `92vh` }} />,
