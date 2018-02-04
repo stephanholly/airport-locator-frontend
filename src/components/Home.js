@@ -31,7 +31,7 @@ class Home extends React.Component {
   geocodeByAddress(address)
     .then(results => getLatLng(results[0]))
     .then(({ lat, lng }) => {
-      console.log('Success Yay', { lat, lng })
+      console.log('Success', { lat, lng })
       this.setState({
         geocodeResults: this.renderGeocodeSuccess(lat, lng),
         loading: false,
@@ -39,7 +39,7 @@ class Home extends React.Component {
       })
     })
     .catch(error => {
-      console.log('Oh no!', error)
+      console.log('Error', error)
       this.setState({
         geocodeResults: this.renderGeocodeFailure(error),
         loading: false,

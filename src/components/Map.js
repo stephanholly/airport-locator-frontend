@@ -53,9 +53,7 @@ class Map extends React.PureComponent {
   }
 
   render() {
-    console.log("airports", this.state.airports)
     return (
-
         <MyMapComponent
           lat={this.props.location.lat}
           lng={this.props.location.lng}
@@ -63,7 +61,6 @@ class Map extends React.PureComponent {
           isMarkerShown={this.state.isMarkerShown}
           onMarkerClick={this.handleMarkerClick}
         />
-    
     )
   }
 }
