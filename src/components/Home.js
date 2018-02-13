@@ -16,13 +16,9 @@ class Home extends React.Component {
       loading: false,
       latlong: null
     }
-    this.handleSelect = this.handleSelect.bind(this)
-    this.handleChange = this.handleChange.bind(this)
-    this.renderGeocodeFailure = this.renderGeocodeFailure.bind(this)
-    this.renderGeocodeSuccess = this.renderGeocodeSuccess.bind(this)
   }
 
-  handleSelect(address) {
+  handleSelect = (address) => {
     this.setState({
       address,
       loading: true,
@@ -47,14 +43,14 @@ class Home extends React.Component {
     })
   }
 
-  handleChange(address) {
+  handleChange = (address) => {
     this.setState({
       address,
       geocodeResults: null,
     })
   }
 
-  renderGeocodeFailure(err) {
+  renderGeocodeFailure = (err) => {
     return (
       <div className="alert alert-danger" role="alert">
         <strong>Error!</strong> {err}
@@ -62,7 +58,7 @@ class Home extends React.Component {
     )
   }
 
-  renderGeocodeSuccess(lat, lng) {
+  renderGeocodeSuccess = (lat, lng) => {
     return (
       <div className="alert alert-success" role="alert">
         <strong>Success!</strong> Geocoder found latitude and longitude:{' '}
